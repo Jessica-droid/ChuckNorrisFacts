@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">ChuckNorrisFacts</string>
     <string name="label_pesquisar">Pesquisar</string>
+    <string name="pesquisa_palavra">Pesquise por palavra chave:</string>
+    <string name="pesquisa_palavra_hint">Palavra-chave</string>
+    <string name="label_confirmar">Confirmar</string>
+    <string name="dlg_pesquisar_campo_label">Defina a palavra-chave para a pesquisa.</string>
+    <string name="dlg_pesquisar_campo_vazio">Campo de preenchimento obrigatório.</string>
+    <string name="dlg_pesquisar_sem_rede">Conecte-se à uma rede para realizar a pesquisa.</string>
+    <string name="wifi_off">Verifique sua conexão com a internet ou tente novamente mais tarde</string>
+    <string name="no_results">Nenhum resultado encontrado.Tente outra palavra.</string>
 </resources>

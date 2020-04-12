@@ -3,7 +3,9 @@ package com.example.chucknorrisfacts.controll
 import android.content.Context
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.chucknorrisfacts.R
 import com.example.chucknorrisfacts.adapter.ChuckFactAdapter
 import com.example.chucknorrisfacts.model.ResultadoPesquisa
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -52,22 +54,31 @@ class ChuckFactControll (
     //Preenchendo lista com os dados retornados
     private fun exibirDados(chuckFatcs: ResultadoPesquisa){
 
-        // rvLista.visibility = View.VISIBLE
-        noResult_layout.visibility = View.GONE
+        exibeLista()
 
         //Após carregar os fatos, relacionar o adapter com a lista
         rvLista.adapter = ChuckFactAdapter(chuckFatcs.result, context)
     }
 
-    //Exibir um dialogo
+    private fun exibeLista(){
+
+        if (noResult_layout.visibility == View.VISIBLE) noResult_layout.visibility = View.GONE
+        if (rvLista.visibility == View.GONE) rvLista.visibility = View.VISIBLE
+    }
+
+    //Exibir mensagem
     private fun semDados(){
 
+        rvLista.visibility = View.GONE
+        noResult_layout.visibility = View.VISIBLE
 
     }
 
     //Exibir dialogo
     private fun tratarErro(error: Throwable){
-        Log.d(tag, error.message.toString())
+
+        Toast.makeText(context, context.getString(R.string.dlg_pesquisar_sem_rede),Toast.LENGTH_SHORT).show()
+
     }
 
 
