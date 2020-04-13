@@ -1,7 +1,6 @@
 package com.example.chucknorrisfacts.controll
 
 import android.content.Context
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView

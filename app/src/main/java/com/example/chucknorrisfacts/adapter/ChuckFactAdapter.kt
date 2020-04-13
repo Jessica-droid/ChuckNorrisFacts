@@ -38,14 +38,15 @@ class ChuckFactAdapter(private val items: ArrayList<ChuckFact>, private val cont
                 shareIntent.action = Intent.ACTION_SEND
                 shareIntent.type = "text/plain"
                 shareIntent.putExtra(Intent.EXTRA_TEXT, items[position].url)
-                context.startActivity(Intent.createChooser(shareIntent, "Compartilhar Url por:"))
+                context.startActivity(Intent.createChooser(shareIntent, context.getString(R.string.compartilhar_titulo)))
 
             }
         }
     }
 
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+
 
         //Preenchendo as informações
         fun bindView(fato: ChuckFact) {
@@ -73,6 +74,9 @@ class ChuckFactAdapter(private val items: ArrayList<ChuckFact>, private val cont
             else 24f
 
         }
+
+
+
 
     }
 

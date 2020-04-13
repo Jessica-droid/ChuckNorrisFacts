@@ -7,12 +7,9 @@ import android.content.IntentFilter
 import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.WindowManager
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chucknorrisfacts.R
@@ -22,7 +19,6 @@ import com.example.chucknorrisfacts.dialogs.AbrirPesquisa
 import com.example.chucknorrisfacts.dialogs.AbrirPesquisa.RetornaQueryPesquisa
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_main.*
-import java.net.UnknownHostException
 
 class MainActivity : AppCompatActivity(), RetornaQueryPesquisa {
 
@@ -44,7 +40,7 @@ class MainActivity : AppCompatActivity(), RetornaQueryPesquisa {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -60,7 +56,7 @@ class MainActivity : AppCompatActivity(), RetornaQueryPesquisa {
         chuck_facts_list.adapter = ChuckFactAdapter(ArrayList(), this)
     }
 
-    private fun pesquisar(query: String) {
+     fun pesquisar(query: String) {
         ChuckFactControll(
             this,
             MainActivity::class.java.simpleName,

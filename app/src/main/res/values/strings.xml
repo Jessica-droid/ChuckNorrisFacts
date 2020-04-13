@@ -9,4 +9,5 @@
     <string name="dlg_pesquisar_sem_rede">Conecte-se à uma rede para realizar a pesquisa.</string>
     <string name="wifi_off">Verifique sua conexão com a internet ou tente novamente mais tarde</string>
     <string name="no_results">Nenhum resultado encontrado.Tente outra palavra.</string>
+    <string name="compartilhar_titulo">Compartilhar URL por:</string>
 </resources>
