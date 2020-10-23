@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">ChuckNorrisFacts</string>
-    <string name="label_pesquisar">Pesquisar</string>
-    <string name="pesquisa_palavra">Pesquise por palavra chave:</string>
-    <string name="pesquisa_palavra_hint">Palavra-chave</string>
-    <string name="label_confirmar">Confirmar</string>
-    <string name="dlg_pesquisar_campo_label">Defina a palavra-chave para a pesquisa.</string>
-    <string name="dlg_pesquisar_campo_vazio">Campo de preenchimento obrigatório.</string>
-    <string name="dlg_pesquisar_sem_rede">Conecte-se à uma rede para realizar a pesquisa.</string>
-    <string name="wifi_off">Verifique sua conexão com a internet ou tente novamente mais tarde</string>
-    <string name="no_results">Nenhum resultado encontrado.Tente outra palavra.</string>
-    <string name="compartilhar_titulo">Compartilhar URL por:</string>
+    <string name="lb_search">Pesquisar</string>
+    <string name="lb_keyword_search">Pesquise por palavra chave:</string>
+    <string name="lb_keyword">Palavra-chave</string>
+    <string name="lb_confirm">Confirmar</string>
+    <string name="lb_set_keyword_search">Defina a palavra-chave para a pesquisa.</string>
+    <string name="lb_required_field_message">Campo de preenchimento obrigatório.</string>
+    <string name="lb_share_content">Compartilhar URL por:</string>
+    <string name="msg_wifi_off">Conecte-se à uma rede para realizar a pesquisa.</string>
+    <string name="msg_no_internet_connection">Verifique sua conexão com a internet ou tente novamente mais tarde</string>
+    <string name="msg_no_search_result">Nenhum resultado encontrado.Tente outra palavra.</string>
 </resources>

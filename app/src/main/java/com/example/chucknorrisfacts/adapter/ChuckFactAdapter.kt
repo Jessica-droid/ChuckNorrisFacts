@@ -7,12 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chucknorrisfacts.R
-import com.example.chucknorrisfacts.model.ChuckFact
+import com.example.chucknorrisfacts.domain.model.ChuckFact
 import kotlinx.android.synthetic.main.item_lista.view.*
 import java.util.*
-import kotlin.collections.ArrayList
 
-class ChuckFactAdapter(private val items: ArrayList<ChuckFact>, private val context: Context) :
+class ChuckFactAdapter(private val items: List<ChuckFact>, private val context: Context) :
     RecyclerView.Adapter<ChuckFactAdapter.ViewHolder>() {
 
 
@@ -33,12 +32,11 @@ class ChuckFactAdapter(private val items: ArrayList<ChuckFact>, private val cont
             it.bindView(items[position])
             it.itemView.setOnClickListener {
 
-                //Compartilhar Url do item
                 val shareIntent = Intent()
                 shareIntent.action = Intent.ACTION_SEND
                 shareIntent.type = "text/plain"
                 shareIntent.putExtra(Intent.EXTRA_TEXT, items[position].url)
-                context.startActivity(Intent.createChooser(shareIntent, context.getString(R.string.compartilhar_titulo)))
+                context.startActivity(Intent.createChooser(shareIntent, context.getString(R.string.lb_share_content)))
 
             }
         }

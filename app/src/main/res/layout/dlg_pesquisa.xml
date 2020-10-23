@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:fontFamily="sans-serif"
-        android:text="@string/label_pesquisar"
+        android:text="@string/lb_search"
         android:textColor="@color/colorAccent"
         android:textSize="18sp" />
 
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="@string/dlg_pesquisar_campo_label" />
+        android:text="@string/lb_set_keyword_search" />
 
     <EditText
         android:id="@+id/campo_pesquisa"
@@ -38,7 +38,7 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:fontFamily="serif"
-        android:hint="@string/pesquisa_palavra_hint"
+        android:hint="@string/lb_keyword"
         android:inputType="textPersonName" />
 
     <Button
@@ -49,7 +49,7 @@
         android:background="@color/quase_branco"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:text="@string/label_confirmar"
+        android:text="@string/lb_confirm"
         android:textColor="@color/colorAccent" />
 
 </LinearLayout>
